@@ -1,5 +1,7 @@
-<html>
+<html ng-app="myModule">
 	<head>
+		<script src="angular.min.js"></script>
+		<script src="2.js"></script>
 		Modules and Controllers
 		
 		<!--- 
@@ -31,6 +33,17 @@
 			1.The 1st one specifices the name for the module
 			2.The 2nd one specifices the dependencies for this module.The module can depend on the other module.
 	  	--->
+		<div ng-controller="myController">
+			{{message}}
+		</div>
+		
+		/*
+		  It doesn't display anything at here.
+		  The message propity doesn't available.
+		*/
+		<div>
+			{{message}}
+		</div>
 
 	</body>
 </html>
