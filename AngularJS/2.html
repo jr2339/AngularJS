@@ -1,9 +1,4 @@
-<html ng-app="myModule">
-	<head>
-		<script src="angular.min.js"></script>
-		<script src="2.js"></script>
-		Modules and Controllers
-		
+
 		<!--- 
 	  		what is a module in AngularJS? 
 			A module is a container for different parts of your application 
@@ -20,11 +15,7 @@
 
 			//$scope is an object, message is a proprity
 		--->
-	</head>
 
-	
-
-	<body>
 		<!---
 			How to create a module?
 			Use the angular object's module() method to create a module.
@@ -33,16 +24,27 @@
 			1.The 1st one specifices the name for the module
 			2.The 2nd one specifices the dependencies for this module.The module can depend on the other module.
 	  	--->
+
+<html ng-app="myModule">
+	<head>
+		<script src="angular.min.js"></script>
+		<script src="2.js"></script>
+	</head>
+
+	
+
+	<body>
+
 		<div ng-controller="myController">
-			{{message}}
+			{{ message }}
 		</div>
 		
-		/*
+		<!---
 		  It doesn't display anything at here.
 		  The message propity doesn't available.
-		*/
+		--->
 		<div>
-			{{message}}
+			{{ message }}
 		</div>
 
 	</body>
