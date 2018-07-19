@@ -3,7 +3,15 @@ var myApp = angular.module("myModule",[]);
 
 /// Create the controller
 var myController = function($scope){
-	$scope.message = "AngularJS Tutorial";
+	
+	var employee = {
+		firstName: "David",
+		lastName: "Hastings",
+		gender: "Male"
+	};
+
+
+	$scope.employee = employee;
 };
 
 ///Register the controller with the module
